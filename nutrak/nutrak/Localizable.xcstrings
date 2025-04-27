@@ -1,0 +1,46 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "CameraScanningScreen" : {
+
+    },
+    "home" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        }
+      }
+    },
+    "HomeScreen" : {
+
+    },
+    "nutrak" : {
+
+    },
+    "NutrititionResultsScreen" : {
+
+    },
+    "ScanningScreen" : {
+
+    },
+    "streak" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Streak"
+          }
+        }
+      }
+    },
+    "StreakScreen" : {
+
+    }
+  },
+  "version" : "1.0"
+}
