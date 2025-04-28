@@ -16,7 +16,7 @@ enum TabType {
 
 struct TabScreen: View {
     
-    @State var selectedTab: TabType = .home
+    @ObservedObject var coordinator = Coordinator.shared
     
     init() {
         
@@ -32,10 +32,10 @@ struct TabScreen: View {
     }
     
     var body: some View {
-        TabView(selection: $selectedTab) {
+        TabView(selection: $coordinator.selectedTab) {
             HomeScreen()
                 .tabItem {
-                    Image(selectedTab == .home ? "home_tab_selected" : "home_tab")
+                    Image(coordinator.selectedTab == .home ? "home_tab_selected" : "home_tab")
                         .renderingMode(.original)
                     
                     Text("home")
@@ -50,7 +50,7 @@ struct TabScreen: View {
             
             StreakScreen()
                 .tabItem {
-                    Image(selectedTab == .streak ? "streak_tab_selected" : "streak_tab")
+                    Image(coordinator.selectedTab == .streak ? "streak_tab_selected" : "streak_tab")
                         .renderingMode(.original)
                     
                     Text("streak")

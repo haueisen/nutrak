@@ -1,6 +1,20 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%lld%%" : {
+
+    },
+    "camera" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Camera"
+          }
+        }
+      }
+    },
     "CameraScanningScreen" : {
 
     },
@@ -15,17 +29,44 @@
         }
       }
     },
-    "HomeScreen" : {
-
-    },
     "nutrak" : {
 
     },
-    "NutrititionResultsScreen" : {
+    "photoLibrary" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Photo Library"
+          }
+        }
+      }
+    },
+    "ResultsScreen" : {
 
     },
-    "ScanningScreen" : {
-
+    "scanInProgress" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scanning in progress..."
+          }
+        }
+      }
+    },
+    "scanInstruction" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ensure your food is well-lit and in focus for\nthe most accurate scan."
+          }
+        }
+      }
     },
     "streak" : {
       "extractionState" : "manual",
