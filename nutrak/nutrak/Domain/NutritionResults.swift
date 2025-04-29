@@ -20,7 +20,7 @@ enum MacroNutrient: String, CaseIterable {
     case fats
     
     var name: String {
-        NSLocalizedString(self.rawValue, comment: "")
+        String(localized: String.LocalizationValue(self.rawValue))
     }
     
     var icon: String {
@@ -51,7 +51,7 @@ enum MicroNutrient: String {
     case calcium
     
     var name: String {
-        NSLocalizedString(self.rawValue, comment: "")
+        String(localized: String.LocalizationValue(self.rawValue))
     }
     
     var icon: String {

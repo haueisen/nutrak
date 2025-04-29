@@ -18,7 +18,7 @@ struct ResultsScreen: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            NavigationBar(title: NSLocalizedString("resultsTitle", comment: ""),onBackPressed: { dismiss() })
+            NavigationBar(title: LocalizedStringKey("resultsTitle"),onBackPressed: { dismiss() })
             
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
@@ -41,7 +41,7 @@ struct ResultsScreen: View {
                         
                         Text(
                             String(
-                                format: NSLocalizedString("totalGrams", comment: ""),
+                                format: String(localized: "totalGrams"),
                                    results.macroNutrients.map { $0.amount }.reduce(0, +)
                             )
                         )
@@ -78,7 +78,7 @@ struct ResultsScreen: View {
                         
                         Text(
                             String(
-                                format: NSLocalizedString("totalPercent", comment: ""),
+                                format: String(localized:"totalPercent"),
                                 results.microNutrients.map { $0.amount }.reduce(0, +)
                             )
                         )

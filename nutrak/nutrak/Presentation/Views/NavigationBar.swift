@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NavigationBar: View {
     
-    let title: String
+    let title: LocalizedStringKey
     let onBackPressed: (() -> Void)?
     
     var body: some View {
@@ -29,6 +29,7 @@ struct NavigationBar: View {
             }
             
             Text(title)
+                .typography(.titleLarge)
                 .frame(maxWidth: .infinity)
             
             Spacer()

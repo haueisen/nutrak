@@ -9,11 +9,24 @@ import SwiftUI
 
 struct StreakScreen: View {
     
+    let placeholderStreak: Int = 5
+    
     var body: some View {
         VStack {
-            Text ("nutrak")
+            Text ("streakTitle")
+                .typography(.titleLarge)
+                .foregroundStyle(Color.textHighEmp)
             
-            Text ("StreakScreen")
+            ScrollView {
+                VStack(spacing: 36) {
+                    StreakView(streakAmount: placeholderStreak)
+                    
+                    StreakMonthView()
+                    
+                    MilestonesView()
+                }
+                .padding(.horizontal, 20)
+            }
         }
     }
 }
