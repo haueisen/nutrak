@@ -11,6 +11,7 @@ extension ScanningScreen {
     class ViewModel: ObservableObject {
         
         @Published var showScanningInProgress: Bool = false
+        @Published var showResults: Bool = false
         @Published var scanProgress: Float = 0
         @Published var nutritionResults: NutritionResults?
         
@@ -37,6 +38,7 @@ extension ScanningScreen.ViewModel: ScannerDelegate {
         
         withAnimation {
             showScanningInProgress = false
+            showResults = true
         }
     }
 }

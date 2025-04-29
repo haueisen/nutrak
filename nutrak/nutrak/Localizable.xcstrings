@@ -1,8 +1,25 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
+    "%" : {
+
+    },
     "%lld%%" : {
 
+    },
+    "calcium" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calcium"
+          }
+        }
+      }
     },
     "camera" : {
       "extractionState" : "manual",
@@ -18,6 +35,42 @@
     "CameraScanningScreen" : {
 
     },
+    "carbs" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carbs"
+          }
+        }
+      }
+    },
+    "emptyTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " "
+          }
+        }
+      }
+    },
+    "fats" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fats"
+          }
+        }
+      }
+    },
+    "g" : {
+
+    },
     "home" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -29,8 +82,52 @@
         }
       }
     },
+    "macroNutrients" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacroNutrients"
+          }
+        }
+      }
+    },
+    "microNutrients" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MicroNutrients"
+          }
+        }
+      }
+    },
+    "moreInsights" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Want more insights? "
+          }
+        }
+      }
+    },
     "nutrak" : {
 
+    },
+    "nutritionalOverview" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nutritional Overview:"
+          }
+        }
+      }
     },
     "photoLibrary" : {
       "extractionState" : "manual",
@@ -43,8 +140,38 @@
         }
       }
     },
-    "ResultsScreen" : {
-
+    "proteins" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proteins"
+          }
+        }
+      }
+    },
+    "resultsTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nutrition Results"
+          }
+        }
+      }
+    },
+    "saveLog" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save to Daily Log"
+          }
+        }
+      }
     },
     "scanInProgress" : {
       "extractionState" : "manual",
@@ -81,6 +208,50 @@
     },
     "StreakScreen" : {
 
+    },
+    "totalGrams" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total: %dg"
+          }
+        }
+      }
+    },
+    "totalPercent" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total: %d%%"
+          }
+        }
+      }
+    },
+    "upgradeToPremium" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upgrade to Premium"
+          }
+        }
+      }
+    },
+    "vitaminA" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vitamin A"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

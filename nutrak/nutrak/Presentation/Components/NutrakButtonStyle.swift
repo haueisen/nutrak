@@ -52,11 +52,20 @@ struct NutrakButtonStyle: ButtonStyle {
         }
     }
     
+    private var textColor: Color {
+        switch type {
+        case .primary:
+            Color.neutralN900
+        case .secondary:
+            Color.textHighEmp
+        }
+    }
+    
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .padding(8)
             .background(background)
-            .foregroundStyle(Color.textHighEmp)
+            .foregroundStyle(textColor)
             .cornerRadius(cornerRadius)
     }
 }

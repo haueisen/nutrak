@@ -34,11 +34,20 @@ struct TipCard: View {
         // hardcoded style since this is going to be the only one on this test
         .background(
             RoundedRectangle(cornerRadius: cornerRadius)
-                .strokeBorder(lineWidth: 1)
-                .foregroundStyle(Color.secondaryN400)
+                .fill(
+                    RadialGradient(
+                        colors: [.secondaryN100, .secondaryN300],
+                        center: UnitPoint(x: 0.5, y: -0.3),
+                        startRadius: 0,
+                        endRadius: 130
+                    )
+                )
+                .overlay(content: {
+                    RoundedRectangle(cornerRadius: cornerRadius)
+                        .strokeBorder(lineWidth: 1)
+                        .foregroundStyle(Color.secondaryN400)
+                })
         )
-        .background(Color.secondaryN300)
-        .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
     }
 }
 

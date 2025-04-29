@@ -12,13 +12,23 @@ struct ScanningScreen: View {
     @ObservedObject var viewModel = ViewModel()
     
     var body: some View {
-        VStack {
-            if let results = viewModel.nutritionResults {
-                ResultsScreen(results: results)
-            } else {
+        NavigationStack {
+            VStack {
                 ScanSelector(onImageData: viewModel.scanImage(data:))
-                    
             }
+            .navigationDestination(
+                isPresented: $viewModel.showResults) {
+                    if let results = viewModel.nutritionResults {
+                        ResultsScreen(results: results)
+                    } else {
+                        // avoid showing an empty resultsScreen
+                        // this has no visual effect, so the user won't notice
+                        EmptyView()
+                            .onAppear {
+                                viewModel.showResults = false
+                            }
+                    }
+                }
         }
         .fullScreenCover(
             isPresented: $viewModel.showScanningInProgress,
@@ -27,6 +37,7 @@ struct ScanningScreen: View {
                 ScanInProgress(progress: $viewModel.scanProgress)
             }
         )
+    
         
     }
 }
@@ -36,7 +47,7 @@ fileprivate func mockViewModel() -> ScanningScreen.ViewModel {
     
     let mockResult = NutritionResults(
         calories: 320,
-        macroNutrients: [(nutrient: .protein, amount: 20), (nutrient: .carb, amount: 40), (nutrient: .fat, amount: 10)],
+        macroNutrients: [(nutrient: .proteins, amount: 20), (nutrient: .carbs, amount: 40), (nutrient: .fats, amount: 10)],
         microNutrients: [(nutrient: .vitaminA, amount: 10), (nutrient: .calcium, amount: 15)])
     
     viewModel.nutritionResults = mockResult

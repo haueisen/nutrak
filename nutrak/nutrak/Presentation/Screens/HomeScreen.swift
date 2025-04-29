@@ -13,7 +13,7 @@ struct HomeScreen: View {
     
     var body: some View {
         VStack {
-            HeaderBar()
+            HeaderBarLogo()
             
             ScrollView {
                 TipCard(

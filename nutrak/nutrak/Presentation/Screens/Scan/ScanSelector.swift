@@ -13,7 +13,7 @@ struct ScanSelector: View {
     
     var body: some View {
         VStack(spacing: 12) {
-            HeaderBar()
+            HeaderBarLogo()
             Spacer()
             
             Text("scanInstruction")

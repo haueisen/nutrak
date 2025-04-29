@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HeaderBar: View {
+struct HeaderBarLogo: View {
     
     var body: some View {
         HStack {
@@ -20,5 +20,5 @@ struct HeaderBar: View {
 }
 
 #Preview {
-    HeaderBar()
+    HeaderBarLogo()
 }

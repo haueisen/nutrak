@@ -15,7 +15,7 @@ class Scanner {
     
     private let mockResult = NutritionResults(
         calories: 320,
-        macroNutrients: [(nutrient: .protein, amount: 20), (nutrient: .carb, amount: 40), (nutrient: .fat, amount: 10)],
+        macroNutrients: [(nutrient: .proteins, amount: 20), (nutrient: .carbs, amount: 40), (nutrient: .fats, amount: 10)],
         microNutrients: [(nutrient: .vitaminA, amount: 10), (nutrient: .calcium, amount: 15)])
     
     private var mockProgressTimer: Timer?
